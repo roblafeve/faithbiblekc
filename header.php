@@ -8,9 +8,4 @@
     <?php wp_head(); ?>
 </head>
 <body>
-  <ul class="nav">
-    <li>hi</li>
-    <li>there</li>
-    <li>Aaron</li>
-  </ul>
 			
