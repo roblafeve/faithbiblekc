@@ -1,0 +1,170 @@
+/*
+Theme Name: Zaarly Blog
+Theme URI: http://blog.zaarly.com
+Description: A beautiful theme developed by CremaLab for the fine folks at Zaarly.
+Author: CremaLab
+Author URI: http://cremalab.com/
+Version: 1.0
+Tags: 
+
+License:
+License URI:
+*/
+/* @override http://cremalab.com/zaarly/zaarly.css */
+
+* {
+  font-size: 1em;
+  font-family: Arial,Helvetica,Sans-Serif;
+  border:0;
+}
+
+li {
+  list-style:none;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  margin: 0;
+  background: #dff4fe url('./img/body_bg.png');
+font-size: 13px;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+line-height: 1.7em;
+color: #436F8F;
+text-shadow: #F7FCFF 0 1px 0;
+}
+a:link, a:visited {
+border-bottom: 1px dotted black;
+text-decoration: none;
+color: #436F8F;
+text-shadow: #F7FCFF 0 1px 0;
+font-weight: 600;
+}
+a:hover, a:active {
+color:#ca1e00;
+border-bottom:1px dotted #ca1e00;
+}
+h1 {
+font-family:Georgia, serif;
+font-size:28px;
+margin:30px 0 10px 0;
+font-weight:normal;
+line-height:32px;
+}
+h2 {
+font-family: Georgia, serif;
+font-size: 28px;
+margin: 30px 0 10px 0;
+font-weight: normal;
+line-height: 32px;
+}
+h3 {
+font-size: 18px;
+}
+h4 {
+margin: 0;
+font-weight: normal;
+float: left;
+color: #436f8f;
+  text-shadow: #f7fcff 0 1px 0;
+}
+h5, h6 {
+  text-align: center;
+}
+
+h5 {
+  font-size: 48px;
+  margin: 0 0 10px;
+  color: #fff;
+  text-shadow: #b36035 0 2px 0;
+}
+
+h6 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* squaredeye */
+
+#header {
+position: relative;
+  height: 41px;
+  background-color: #436f8f;
+  padding: 15px 0 0;
+  -webkit-border-radius: 0 0 7px 7px ;
+  -moz-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+  margin-bottom: 20px;
+}
+#nav {
+  margin: 0 0 0 40px;
+  font-size: 16px;
+}
+#nav a, .top a {
+border: none;
+}
+#nav li {
+  float: left;
+  margin: 0 26px 0 0;
+}
+#nav li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 0 20px;
+  text-shadow: #33556e 1px 1px;
+  display: block;
+  border: none;
+}
+#nav li a:hover {
+  text-decoration: underline;
+  border: none;
+}
+#nav li a.current {
+  background: url(./img/dynks.jpg) no-repeat center bottom;
+}
+#social {
+  float: right;
+  vertical-align: top;
+  margin: 0 10px 0 0;
+}
+#social iframe {
+  float: right;
+  margin-left: 25px;
+  widows: 140px;
+  of
+}
+
+/* CONTENT AREA */
+.section {
+border-top: 1px solid #F7FCFF;
+border-bottom: 1px solid #A9C7DB;
+padding: 20px 0;
+width: 100%;
+}
+.top {
+border-top: none;
+}
+.bottom {
+border-bottom: none;
+}
+#logo {
+background: url("./img/zaarlylogo.png") no-repeat 0 0;
+width: 430px;
+height: 180px;
+display: block;
+position: relative;
+text-decoration:none;
+clear:both;
+}
+#logo:hover {
+text-decoration:none;
+}
+#content {
+border-right: 1px solid #A9C7DB;
+margin-right: 9px;
+padding: 30px 30px 0 0;
+}
+#sidebar h2{
+margin-top: 20px;
+}
