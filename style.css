@@ -1,3 +1,6 @@
+/* @override 
+	http://localhost:8888/faithbiblekc/wp-content/themes/faithbiblekc/style.css */
+
 /*
 Theme Name: Faith Bible Church
 Theme URI: http://faithbiblekc.org
@@ -108,20 +111,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal; }
 
-/* === STYLES === */
-body {
-  font-family: "M1cregular";
-  color: #2a2a2a;
-  font-size: 16px;
-  line-height: 1.5em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
-
-#main {
-  width: 640px;
-  margin: 0 auto;
-  padding: 100px 100px 76px 100px; }
-
 /* === HEADINGS === */
+
 h1, h2, h3, h4 {
   line-height: 1.5em;
   margin-bottom: 20px; }
@@ -139,6 +130,7 @@ h3 {
   font-size: 18px; }
 
 /* === PARAGRAPHS === */
+
 p {
   margin-bottom: 24px; }
 
@@ -146,6 +138,7 @@ p {
   text-indent: -0.4em; }
 
 /* === LISTS === */
+
 ol {
   margin-bottom: 24px;
   list-style: decimal; }
@@ -160,6 +153,7 @@ ul {
       list-style: lower-alpha; }
 
 /* === QUOTES === */
+
 blockquote {
   padding-left: 20px;
   margin: 0 60px 0 35px;
@@ -177,6 +171,7 @@ blockquote b {
   font-size: 16px; }
 
 /* ==== LINKS === */
+
 a {
   text-decoration: none;
   color: #1ca7e4; }
@@ -184,3 +179,47 @@ a {
     text-decoration: underline; }
   a:hover {
     color: #1eb3f6; }
+  
+/* === LAYOUT === */
+
+body {
+  font-family: "M1cregular";
+  color: #2a2a2a;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
+
+header {
+  width: 80%;
+  margin: 0 auto ;}
+  nav ul li {
+    display: inline; 
+    margin: 0 1em 0 0;
+  }
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: block; }
+  .content:after {
+    content: '';
+    display: block;
+    clear: both;}
+  .main {
+    width: 64%;
+    margin: 0 8% 0 0;
+    float: left; }
+  .sidebar {
+    width: 24%;
+    float: left;
+    position: fixed;
+    margin: 0 0 0 56.2%;
+    background: red;
+    height: 300px; }
+ 
+footer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5em 0 0;
+  border-top: 1px solid #333; }

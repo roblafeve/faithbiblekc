@@ -9,8 +9,15 @@
     <?php wp_head(); ?>
 </head>
 <body>
+  
   <header>
-    <div class="nav">
+    <a href="<?php echo site_url(); ?>">
+      <img class="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/logo.png" alt="Faith Bible Church" />
+    </a>
+    <div class="search">
+      <?php get_search_form(); ?>
+    </div>
+    <nav>
       <?php 
       $args = array(
       'theme_location'  => 'primary',
@@ -23,6 +30,7 @@
       'depth'           => 1          	
       );
       wp_nav_menu($args); ?>
-    </div>
+    </nav>
   </header>
-			
+	
+	<div class="content">
