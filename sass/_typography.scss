@@ -1,0 +1,71 @@
+@import "fonts";
+
+$font-family:	'OpenSansRegular';
+$font-size:		24px;
+$baseline:		1rem;
+
+html		{ 	font-family:	$font-family;
+				font-size: 		$font-size; 
+				line-height:	$baseline;
+				margin-bottom:	$baseline; 
+			}
+
+body		{	padding: 		0 2*$baseline 0;
+				font-size:		0.66*$baseline;
+				line-height:	$baseline;
+				// background: url("../img/baseline-grid.png") 0 24px; /* === BASELINE GRID GUIDE === */
+			}
+
+.mega		{	font-size: 		3.00*$baseline;
+				line-height: 	3.00*$baseline;
+				margin:	   		2.18*$baseline 0 0.85*$baseline;						
+			}
+
+h1 			{ 	font-family:	'OpenSansLight';
+				font-size:		2.00*$baseline;
+				line-height:	2.00*$baseline;
+				margin:	   		2.00*$baseline 0 1.00*$baseline;					
+			}
+
+h2 			{	font-family:	'OpenSansLight';
+				font-size:		1.50*$baseline;
+				line-height:	1.50*$baseline;
+				margin:	   		2.45*$baseline 0 1.10*$baseline;						
+			}
+
+h3 			{ 	font-family:	'OpenSansRegular';
+				font-size:		1.00*$baseline;
+				line-height:	1.50*$baseline;
+				margin:	   		1.65*$baseline 0 0.90*$baseline; 	 				
+			}
+
+h4			{ 	font-family:	'OpenSansSemibold';
+				font-size:		0.75*$baseline;
+				margin:	    	1.99*$baseline 0 1.05*$baseline; 				
+			}
+
+h5 			{ 	font-family:	'OpenSansBoldItalic';
+				font-size:		0.66*$baseline;
+				margin:	    	2.00*$baseline 0 1.00*$baseline; 				
+			}
+
+h6 			{ 	font-family:	'OpenSansExtrabold';
+				font-size:		0.50*$baseline;
+				margin:	    	2.05*$baseline 0 0.96*$baseline; 					
+			}
+
+p, 
+ul, 
+ol 			{ 	margin-bottom:	1*$baseline; 	}
+
+ul 			{ 	list-style: disc;
+				list-style-position: inside;
+			}
+
+ol 			{ 	list-style: alpha;
+				list-style-position: inside;
+			}
+
+blockquote 	{	font-family: 	'OpenSansLightItalic';
+				padding:		0 2*$baseline 0;			
+			}

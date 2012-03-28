@@ -3,8 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
-	<link media="all" rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/reset.css" />
-	<link media="all" rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+	<link href="<?php bloginfo( 'template_directory' ); ?>/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<script src="<?php bloginfo( 'template_directory' ); ?>/js/modernizr.custom.31096.js" type="text/javascript"></script>
     <?php wp_head(); ?>
 </head>
