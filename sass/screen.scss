@@ -3,5 +3,88 @@
 //////////////////////////
 
 @import "compass/reset";
-
+@import "compass";
+@import "fonts";
 @import "typography";
+@import "mixins";
+
+//////////////////////////
+////// STRUCTURE /////////
+//////////////////////////
+
+header, 
+#content, 
+footer	{	
+	margin:			0 10%;
+	min-width:		625px;
+	@include 		microclear;	
+	margin-bottom:	2*$baseline;
+}
+
+header {}
+
+#logo-search {
+	@include 			microclear;
+	margin:				2*$baseline 0;
+	
+	#logo 	{
+		float: 			left;
+		display:			block;
+		padding:			0;
+	}
+
+	#search 	{
+		float: 			right;
+	}
+
+}
+
+#main 	{	
+	width: 			65%;
+	margin: 			0 5% 0 0;
+	float: 			left;
+
+	:first-child 	{
+		margin-top: 0;
+	}
+}
+
+#sidebar	{ 	
+	width: 			30%;
+	background: 	red;
+	float:			left;
+}
+
+//////////////////////////
+////// STYLES ////////////
+//////////////////////////
+
+nav 			{
+	width:			100%;
+	background: 	none;
+	overflow: 		auto;
+	@include 		border-radius(0.2*$baseline);
+	@include 		box-shadow(rgba(black, 0.1) 0 0 2px 1px inset, rgba(black, 0.05) 0 -1*$baseline 1*$baseline 1px inset);
+
+	ul 		{
+		overflow: auto;
+		margin: 0;
+
+		li 	{	
+		float: 			left;
+		list-style:		none;
+		border-right:	1px solid rgba(black, 0.05);
+		border-left: 	1px solid #fff;
+
+		a 		{	
+			float: 			left;
+			list-style:		none;
+			padding:			0.36*$baseline 0.75*$baseline;
+			color: 			$nav-link;
+			}
+
+		}
+
+	}
+
+}

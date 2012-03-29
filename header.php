@@ -10,11 +10,13 @@
 <body>
   
   <header>
-    <a href="<?php echo site_url(); ?>">
-      <img class="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/logo.png" alt="Faith Bible Church" />
-    </a>
-    <div class="search">
-      <?php get_search_form(); ?>
+    <div id="logo-search">
+      <a href="<?php echo site_url(); ?>" id="logo">
+        <img src="<?php bloginfo( 'template_directory' ); ?>/img/logo.png" alt="Faith Bible Church" />
+      </a>
+      <div id="search">
+        <?php get_search_form(); ?>
+      </div>
     </div>
     <nav>
       <?php 
@@ -32,4 +34,4 @@
     </nav>
   </header>
 	
-	<div class="content">
+	<div id="content">

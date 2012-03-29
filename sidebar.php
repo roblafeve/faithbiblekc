@@ -1,4 +1,3 @@
-
 <ul>
 <?php
 	$recent_posts = wp_get_recent_posts();
@@ -7,5 +6,3 @@
 	}
 ?>
 </ul>
-                        
-						
