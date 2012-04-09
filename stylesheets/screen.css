@@ -238,9 +238,9 @@ nav {
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
   border-radius: 0.2rem;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 1px inset, rgba(0, 0, 0, 0.05) 0 -1rem 1rem 1px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 1px inset, rgba(0, 0, 0, 0.05) 0 -1rem 1rem 1px inset;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 1px inset, rgba(0, 0, 0, 0.05) 0 -1rem 1rem 1px inset; }
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 1px inset, rgba(0, 0, 0, 0.025) 0 -0.75rem 0.75rem 1px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 1px inset, rgba(0, 0, 0, 0.025) 0 -0.75rem 0.75rem 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 1px inset, rgba(0, 0, 0, 0.025) 0 -0.75rem 0.75rem 1px inset; }
   nav ul {
     overflow: auto;
     margin: 0; }
@@ -249,8 +249,13 @@ nav {
       list-style: none;
       border-right: 1px solid rgba(0, 0, 0, 0.05);
       border-left: 1px solid #fff; }
+      nav ul li:hover {
+        background: rgba(0, 0, 0, 0.025); }
+      nav ul li.current_page_item {
+        background: rgba(0, 0, 0, 0.05); }
+      nav ul li:first-child {
+        border-left: none; }
       nav ul li a {
-        float: left;
-        list-style: none;
+        display: block;
         padding: 0.36rem 0.75rem;
         color: #333333; }
