@@ -5,6 +5,7 @@
 	<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
 	<link href="<?php bloginfo( 'template_directory' ); ?>/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<script src="<?php bloginfo( 'template_directory' ); ?>/js/modernizr.custom.31096.js" type="text/javascript"></script>
+  <script src="<?php bloginfo( 'template_directory' ); ?>/js/css3-mediaqueries.js" type="text/javascript"></script>
     <?php wp_head(); ?>
 </head>
 <body>
