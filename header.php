@@ -1,38 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html <?php language_attributes(); ?>>
 <head>
-	<meta charset="utf-8">
-	<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
-	<link href="<?php bloginfo( 'template_directory' ); ?>/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<script src="<?php bloginfo( 'template_directory' ); ?>/js/modernizr.custom.31096.js" type="text/javascript"></script>
-  <script src="<?php bloginfo( 'template_directory' ); ?>/js/css3-mediaqueries.js" type="text/javascript"></script>
-    <?php wp_head(); ?>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/screen.css" type="text/css" media="screen" />
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
+	<?php wp_head(); ?>
 </head>
 <body>
-  
-  <header>
-    <div id="logo-search">
-      <a href="<?php echo site_url(); ?>" id="logo">
-        <img src="<?php bloginfo( 'template_directory' ); ?>/img/logo.png" alt="Faith Bible Church" />
-      </a>
-      <div id="search">
-        <?php get_search_form(); ?>
-      </div>
-    </div>
-    <nav>
-      <?php 
-      $args = array(
-      'theme_location'  => 'primary',
-      'menu'            => 'primary', 
-      'container'       => false,
-      'menu_class'      => '',
-      'echo'            => true,
-      'fallback_cb'     => 'faithbiblekc_page_menu',
-      'items_wrap'      => '<ul>%3$s</ul>',
-      'depth'           => 1          	
-      );
-      wp_nav_menu($args); ?>
-    </nav>
-  </header>
-	
-	<div id="content">
+	<header>
+		<?php wp_nav_menu( array('container' => 'nav','menu' => 'nav-main' )); ?>
+	</header>
