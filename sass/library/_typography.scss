@@ -4,7 +4,11 @@ audio[controls],canvas,video { display: inline-block; *display: inline; zoom: 1 
 
 // BASE //
 html { height: 100%; font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100% } /* Force scrollbar in non-IE and Remove iOS text size adjust without disabling user zoom */
-body { margin: 0; min-height: 100%; -webkit-font-smoothing:antialiased; font-smoothing:antialiased; text-rendering:optimizeLegibility; /* Improve default text rendering, handling of kerning pairs and ligatures */	
+body { 
+	margin: 0; min-height: 100%; 
+//	-webkit-font-smoothing:antialiased; 
+//	font-smoothing:antialiased; 
+//	text-rendering:optimizeLegibility; /* Improve default text rendering, handling of kerning pairs and ligatures */	
 	
 	font-family: 'OpenSansRegular'; 
 	font-size: 1em; // 16px // 
@@ -14,7 +18,7 @@ body { margin: 0; min-height: 100%; -webkit-font-smoothing:antialiased; font-smo
 }
 
 // TYPOGRAPHY //
-h1 { font-size: 3.750em; line-height: 1.20em; margin: 0.00em 0 0.30em; } // 72px //
+h1 { font-size: 3.750em; line-height: 1.20em; margin: 0.00em 0 0.30em; font-family: 'OpenSansLight'; } // 72px //
 h2 { font-size: 3.000em; line-height: 1.25em; margin: 0.60em 0 0.40em; } // 48px //
 h3 { font-size: 2.250em; line-height: 1.35em; margin: 0.78em 0 0.60em; } // 36px //
 h4 { font-size: 1.500em; line-height: 1.50em; margin: 1.10em 0 0.95em; } // 24px //

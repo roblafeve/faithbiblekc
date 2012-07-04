@@ -11,5 +11,5 @@
 </head>
 <body>
 	<header>
-		<?php wp_nav_menu( array('container' => 'nav','menu' => 'nav-main' )); ?>
+		<?php wp_nav_menu( array('container' => 'nav','menu' => 'main' )); ?>
 	</header>
