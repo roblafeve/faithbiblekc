@@ -1,1 +1,25 @@
 @import "library/base";
+
+.contents {
+	@include row;
+}
+
+header {
+	@include 		container;
+	padding-top: 	3em;
+	padding-bottom: 3em;
+
+	#logo {
+		@include 			column (3);
+		height: 			5em;
+		background: 		url('../img/ui.svg') no-repeat center;
+		background-size: 	contain;
+		text-indent: 		-100%;
+	}
+
+	#menus {
+		@include 	column (9, last);
+
+	}
+
+}
