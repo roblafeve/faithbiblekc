@@ -17,20 +17,24 @@ body {
 //	-webkit-font-smoothing:antialiased; 
 	font-smoothing:antialiased; 
 	text-rendering:optimizeLegibility;	
-	font: 16px/1.75 'OpenSansRegular'; // 16px/24px // 
+	font: 12px/2.05 'OpenSansRegular'; // 16px/24px // 
 	
-//	padding: 3em; // !!! REMOVE // 
+	padding: 3em; // !!! REMOVE // 
 }
 
 // TYPOGRAPHY //
 
-h1 { font: 4.00em/1.25em 'OpenSansLight'	; margin: 0.75em 0 0.38em; text-transform: uppercase } // 48px //
-h2 { font: 3.00em/1.25em 'OpenSansLight'	; margin: 1.00em 0 0.50em } // 36px //
-h3 { font: 2.00em/1.25em 'OpenSansSemiBold'	; margin: 1.50em 0 0.75em } // 24px //
-h4 { font: 1.50em/1.25em 'OpenSansRegular'	; margin: 2.00em 0 1.00em } // 18px //
-h5 { font: 1.00em/1.25em 'OpenSansRegular'	; margin: 3.00em 0 1.50em } // 16px //
-h6 { font: 0.75em/1.25em 'OpenSansRegular'	; margin: 4.00em 0 2.00em } // 16px //
-p, ul, ol, pre, td, th, label { margin: 0 0 1.5em; }
+h1 { font: 5.00em/1.25 'OpenSansLight'		; margin: 0.75em 0 0.38em; text-transform: uppercase } // 48px //
+h2 { font: 4.00em/1.25 'OpenSansLight'		; margin: 1.00em 0 0.50em } // 36px //
+h3 { font: 3.00em/1.25 'OpenSansLightItalic'; margin: 1.50em 0 0.75em } // 24px //
+h4 { font: 2.00em/1.25 'OpenSansSemiBold'	; margin: 2.00em 0 1.00em } // 18px //
+h5 { font: 1.50em/1.25 'OpenSansBoldItalic'	; margin: 3.00em 0 1.50em } // 16px //
+h6 { font: 1.00em/1.25 'OpenSansBold'		; margin: 4.00em 0 2.00em; text-transform: uppercase } // 16px //
+p, ul, ol, pre, td, th, label { 
+	font-size: 		1.33em;
+	line-height: 	2.05;
+	margin: 		0 0 1.5em; 
+}
 
 // LISTS //
 
@@ -118,7 +122,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: none 
 }
 blockquote, q, cite { 
-	font: 1.25em/1.5em 'OpenSansLightItalic' 
+	font-family: 'OpenSansLightItalic' 
 }
 blockquote { 
 	padding-left: 1.5em; 

@@ -1,4 +1,4 @@
-/* line 17, /Users/Rob/.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,38 +19,38 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-/* line 20, /Users/Rob/.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../../../.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1; }
 
-/* line 22, /Users/Rob/.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 24, /Users/Rob/.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 26, /Users/Rob/.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 28, /Users/Rob/.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 101, /Users/Rob/.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  /* line 101, ../../../../../../.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 30, /Users/Rob/.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 114, /Users/Rob/.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../.rvm/gems/ruby-1.9.2-p290@global/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
@@ -124,17 +124,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal; }
 
-/* line 3, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 3, ../sass/library/_typography.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog {
   display: block; }
 
-/* line 4, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 4, ../sass/library/_typography.scss */
 audio[controls], canvas, video {
   display: inline-block;
   *display: inline;
   zoom: 1; }
 
-/* line 8, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 8, ../sass/library/_typography.scss */
 html {
   height: 100%;
   font-size: 100%;
@@ -142,246 +142,250 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 /* Force scrollbar in non-IE and Remove iOS text size adjust without disabling user zoom */
-/* line 15, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 15, ../sass/library/_typography.scss */
 body {
   margin: 0;
   min-height: 100%;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font: 16px/1.75 "OpenSansRegular"; }
+  font: 12px/2.05 "OpenSansRegular";
+  padding: 3em; }
 
-/* line 27, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 27, ../sass/library/_typography.scss */
 h1 {
-  font: 4em/1.25em "OpenSansLight";
+  font: 5em/1.25 "OpenSansLight";
   margin: 0.75em 0 0.38em;
   text-transform: uppercase; }
 
-/* line 28, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 28, ../sass/library/_typography.scss */
 h2 {
-  font: 3em/1.25em "OpenSansLight";
+  font: 4em/1.25 "OpenSansLight";
   margin: 1.00em 0 0.50em; }
 
-/* line 29, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 29, ../sass/library/_typography.scss */
 h3 {
-  font: 2em/1.25em "OpenSansSemiBold";
+  font: 3em/1.25 "OpenSansLightItalic";
   margin: 1.50em 0 0.75em; }
 
-/* line 30, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 30, ../sass/library/_typography.scss */
 h4 {
-  font: 1.5em/1.25em "OpenSansRegular";
+  font: 2em/1.25 "OpenSansSemiBold";
   margin: 2.00em 0 1.00em; }
 
-/* line 31, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 31, ../sass/library/_typography.scss */
 h5 {
-  font: 1em/1.25em "OpenSansRegular";
+  font: 1.5em/1.25 "OpenSansBoldItalic";
   margin: 3.00em 0 1.50em; }
 
-/* line 32, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 32, ../sass/library/_typography.scss */
 h6 {
-  font: 0.75em/1.25em "OpenSansRegular";
-  margin: 4.00em 0 2.00em; }
+  font: 1em/1.25 "OpenSansBold";
+  margin: 4.00em 0 2.00em;
+  text-transform: uppercase; }
 
-/* line 33, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 33, ../sass/library/_typography.scss */
 p, ul, ol, pre, td, th, label {
+  font-size: 1.33em;
+  line-height: 2.05;
   margin: 0 0 1.5em; }
 
-/* line 37, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 41, ../sass/library/_typography.scss */
 ul {
   list-style: disc;
   list-style-position: inside; }
 
-/* line 41, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 45, ../sass/library/_typography.scss */
 ol {
   list-style: decimal;
   list-style-position: inside; }
 
-/* line 45, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 49, ../sass/library/_typography.scss */
 li ul, li ol {
   margin: 0 1.5em; }
 
-/* line 48, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 52, ../sass/library/_typography.scss */
 dl dd {
   margin-left: 1.5em; }
 
-/* line 54, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 58, ../sass/library/_typography.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: 1.5em; }
 
-/* line 59, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 63, ../sass/library/_typography.scss */
 th {
   text-align: left; }
 
-/* line 62, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 66, ../sass/library/_typography.scss */
 tr, th, td {
   padding-right: 1.5em;
   border-bottom: 0 solid #333333; }
 
-/* line 69, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 73, ../sass/library/_typography.scss */
 form {
   margin: 0; }
 
-/* line 72, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 76, ../sass/library/_typography.scss */
 fieldset {
   border: 0;
   padding: 0; }
 
-/* line 76, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 80, ../sass/library/_typography.scss */
 textarea {
   overflow: auto;
   vertical-align: top; }
 
-/* line 80, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 84, ../sass/library/_typography.scss */
 legend {
   *margin-left: -0.75em; }
 
-/* line 83, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 87, ../sass/library/_typography.scss */
 button, input, select, textarea {
   vertical-align: baseline;
   *vertical-align: middle; }
 
 /* IE7 and older */
-/* line 87, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 91, ../sass/library/_typography.scss */
 button, input {
   line-height: normal;
   *overflow: visible; }
 
-/* line 91, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 95, ../sass/library/_typography.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button; }
 
-/* line 95, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 99, ../sass/library/_typography.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box; }
 
-/* line 98, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 102, ../sass/library/_typography.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 104, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 108, ../sass/library/_typography.scss */
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/* line 107, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 111, ../sass/library/_typography.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 113, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 117, ../sass/library/_typography.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 116, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 120, ../sass/library/_typography.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none; }
 
-/* line 120, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 124, ../sass/library/_typography.scss */
 blockquote, q, cite {
-  font: 1.25em/1.5em "OpenSansLightItalic"; }
+  font-family: "OpenSansLightItalic"; }
 
-/* line 123, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 127, ../sass/library/_typography.scss */
 blockquote {
   padding-left: 1.5em;
   border-left: 3px solid #0099FF;
   margin: 2em 0; }
 
-/* line 128, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 132, ../sass/library/_typography.scss */
 blockquote > p {
   padding: 0; }
 
-/* line 134, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 138, ../sass/library/_typography.scss */
 a {
   text-decoration: none;
   color: #c47529; }
 
-/* line 137, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 141, ../sass/library/_typography.scss */
 a:hover {
   text-decoration: underline; }
 
-/* line 140, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 144, ../sass/library/_typography.scss */
 a:focus {
   outline: thin dotted; }
 
-/* line 143, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 147, ../sass/library/_typography.scss */
 a:hover, a:active {
   outline: none; }
 
 /* Better CSS Outline Suppression */
-/* line 149, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 153, ../sass/library/_typography.scss */
 figure {
   margin: 0; }
 
-/* line 152, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 156, ../sass/library/_typography.scss */
 img, object, embed, video {
   max-width: 100%;
   width: 100%; }
 
 /* Fluid images */
-/* line 156, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 160, ../sass/library/_typography.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic; }
 
 /* Improve IE's resizing of images */
-/* line 160, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 164, ../sass/library/_typography.scss */
 svg:not(:root) {
   overflow: hidden; }
 
 /* Correct IE9 overflow */
-/* line 166, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 170, ../sass/library/_typography.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted #333;
   cursor: help; }
 
-/* line 173, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 177, ../sass/library/_typography.scss */
 ins, mark {
   text-decoration: none; }
 
-/* line 176, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 180, ../sass/library/_typography.scss */
 mark {
   background: #0099ff; }
 
-/* line 179, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 183, ../sass/library/_typography.scss */
 ins {
   background: #0099ff; }
 
-/* line 182, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 186, ../sass/library/_typography.scss */
 del {
   text-decoration: line-through; }
 
-/* line 185, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 189, ../sass/library/_typography.scss */
 ::-moz-selection {
   background: #0099FF;
   color: #fff;
   text-shadow: none; }
 
 /* selected text */
-/* line 190, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 194, ../sass/library/_typography.scss */
 ::selection {
   background: #0099FF;
   color: #fff;
   text-shadow: none; }
 
 /* selected text */
-/* line 198, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 202, ../sass/library/_typography.scss */
 strong, b, dt {
   font-weight: bold; }
 
-/* line 201, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 205, ../sass/library/_typography.scss */
 dfn {
   font-style: italic; }
 
-/* line 204, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 208, ../sass/library/_typography.scss */
 var, address {
   font-style: normal; }
 
-/* line 207, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 211, ../sass/library/_typography.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -389,17 +393,17 @@ sub, sup {
   vertical-align: baseline; }
 
 /* Position 'sub' and 'sup' without affecting line-height */
-/* line 213, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 217, ../sass/library/_typography.scss */
 sup {
   top: -0.5em; }
 
 /* Move superscripted text up */
-/* line 216, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 220, ../sass/library/_typography.scss */
 sub {
   bottom: -0.25em; }
 
 /* Move subscripted text down */
-/* line 219, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_typography.scss */
+/* line 223, ../sass/library/_typography.scss */
 span.amp {
   font-family: Adobe Caslon Pro, Baskerville, "Goudy Old Style", "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
@@ -409,20 +413,11 @@ span.amp {
   vertical-align: baseline; }
 
 /* Best available ampersand */
-/* line 61, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_grid.scss */
-body {
-  font-size: 16px; }
-
-@media only screen and (max-width: 1023px) {
-  /* line 64, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_grid.scss */
-  body {
-    font-size: 0.8em;
-    line-height: 1.5em; } }
-/* line 70, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_grid.scss */
+/* line 70, ../sass/library/_grid.scss */
 img, object, embed {
   max-width: 100%; }
 
-/* line 74, /Users/Rob/Web/faithbiblekc/wp-content/themes/faithbiblechurch/sass/library/_grid.scss */
+/* line 74, ../sass/library/_grid.scss */
 img {
   height: auto; }
 
