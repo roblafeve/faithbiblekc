@@ -554,39 +554,46 @@ img {
 /* line 7, ../sass/category/_typography.scss */
 body {
   font: 100%/1.5 "OpenSansRegular";
-  padding: 3em;
-  text-align: center; }
+  padding: 3em; }
 
-/* line 9, ../sass/category/_typography.scss */
+/* line 12, ../sass/category/_typography.scss */
 h1 {
   font: 3.75em/1.27 "OpenSansLight";
-  padding: 0.34em 0 0;
+  padding: 0.20em 0 0;
   margin: 0;
   text-transform: uppercase; }
 
-/* line 10, ../sass/category/_typography.scss */
+/* line 13, ../sass/category/_typography.scss */
 h2 {
   font: 3em/1.35 "OpenSansLight";
-  padding: 0.43em 0 0;
-  margin: 0; }
-
-/* line 11, ../sass/category/_typography.scss */
-h3 {
-  font: 2.25em/1.25 "OpenSansLightItalic";
-  margin: 0; }
-
-/* line 12, ../sass/category/_typography.scss */
-h4 {
-  font: 1.5em/1.25 "OpenSansSemiBold";
-  margin: 0; }
-
-/* line 13, ../sass/category/_typography.scss */
-h5 {
-  font: 1.313em/1.25 "OpenSansBoldItalic";
+  padding: 0.25em 0 0;
   margin: 0; }
 
 /* line 14, ../sass/category/_typography.scss */
+h3 {
+  font: 2.25em/1.45 "OpenSansLightItalic";
+  padding: 0.35em 0 0;
+  margin: 0; }
+
+/* line 15, ../sass/category/_typography.scss */
+h4 {
+  font: 1.5em/1.67 "OpenSansSemiBold";
+  padding: 0.50em 0 0;
+  margin: 0; }
+
+/* line 16, ../sass/category/_typography.scss */
+h5 {
+  font: 1.313em/1.77 "OpenSansSemiBoldItalic";
+  padding: 0.60em 0 0;
+  margin: 0; }
+
+/* line 17, ../sass/category/_typography.scss */
 h6 {
-  font: 1.125em/1.25 "OpenSansBold";
+  font: 1.125em/1.9 "OpenSansExtraBold";
+  padding: 0.70em 0 0;
   margin: 0;
   text-transform: uppercase; }
+
+/* line 19, ../sass/category/_typography.scss */
+p, ul, ol, pre, td, th, label {
+  margin: 1em 0; }

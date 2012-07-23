@@ -4,14 +4,16 @@
  ////                                                    ////
 ////////////////////////////////////////////////////////////
 
-body { font: 100%/1.5 'OpenSansRegular'; padding: 3em; text-align: center;}	// 16px //
+body {
+	font: 100%/1.5 'OpenSansRegular'; // 16px/24px //
+	padding: 3em;
+}	
 
-h1 { font: 3.7500em/1.27 'OpenSansLight'		; padding: 0.34em 0 0; margin: 0; text-transform: uppercase; } 	// 60px //
-h2 { font: 3.0000em/1.35 'OpenSansLight'		; padding: 0.43em 0 0; margin: 0 							}	// 48px //
-h3 { font: 2.2500em/1.25 'OpenSansLightItalic'	; margin: 0 												}	// 36px //
-h4 { font: 1.5000em/1.25 'OpenSansSemiBold'		; margin: 0 												}	// 24px //
-h5 { font: 1.3125em/1.25 'OpenSansBoldItalic'	; margin: 0 												}	// 21px //
-h6 { font: 1.1250em/1.25 'OpenSansBold'			; margin: 0; text-transform: uppercase 						} 	// 18px //
-p, ul, ol, pre, td, th, label { 
-	
-}
+h1 { font: 3.7500em/1.27 'OpenSansLight'			; padding: 0.20em 0 0; margin: 0; text-transform: uppercase	} 	// 60px //
+h2 { font: 3.0000em/1.35 'OpenSansLight'			; padding: 0.25em 0 0; margin: 0; 							}	// 48px //
+h3 { font: 2.2500em/1.45 'OpenSansLightItalic'		; padding: 0.35em 0 0; margin: 0; 							}	// 36px //
+h4 { font: 1.5000em/1.67 'OpenSansSemiBold'			; padding: 0.50em 0 0; margin: 0; 							}	// 24px //
+h5 { font: 1.3125em/1.77 'OpenSansSemiBoldItalic'	; padding: 0.60em 0 0; margin: 0; 							}	// 21px //
+h6 { font: 1.1250em/1.90 'OpenSansExtraBold'		; padding: 0.70em 0 0; margin: 0; text-transform: uppercase } 	// 18px //
+
+p, ul, ol, pre, td, th, label { margin: 1em 0;}
