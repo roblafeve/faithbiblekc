@@ -571,13 +571,13 @@ h2 {
 
 /* line 14, ../sass/category/_typography.scss */
 h3 {
-  font: 2.25em/1.45 "OpenSansLightItalic";
+  font: 2.25em/1.45 "OpenSansLight";
   padding: 0.35em 0 0;
   margin: 0; }
 
 /* line 15, ../sass/category/_typography.scss */
 h4 {
-  font: 1.5em/1.67 "OpenSansSemiBold";
+  font: 1.5em/1.67 "OpenSansLightItalic";
   padding: 0.50em 0 0;
   margin: 0; }
 
