@@ -14,7 +14,8 @@
 		<section class="contents">
 			<div id='logo'>Faith Bible Church</div>
 			<section id='menus'>
-				<?php wp_nav_menu( array('container' => 'nav','menu' => 'members' )); ?>
+				<?php wp_nav_menu( array('container' => 'nav','menu' => 'secondary' )); ?>
+				<?php mailchimpSF_signup_form(); ?>
 				<?php wp_nav_menu( array('container' => 'nav','menu' => 'main' )); ?>
 			</section>
 		</section>
