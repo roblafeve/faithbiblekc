@@ -1,17 +1,45 @@
 // Site-Wide Layouts //
 
 body
+	background-color			mobile-menu-bg
+
+#page-position
+	position					absolute
+	transition					all 0.2s ease-in-out
+	top							0
+	left						0
+	width						100%
+	height						100%
+	margin-left					0
 	background-color			footer-bg
+	
+	&.menu-open
+		@media					(max-width: 768px)
+			transition			all 0.2s ease-in-out
+			margin-left			-65%
+
+#page-wrapper
+	height						100%
+	border-radius				0.3125em
+	overflow					auto
+	box-shadow					0 0 10px 0 #000
+			
+
 
 //// Determines maximum content width ////
 
 .outer
-	max-width					1140px
+	max-width					64em
 	padding						0 3em
 	margin						0 auto
 	clearfix()
+	@media						(max-width: 768px)
+		padding					0 1.5em
+	@media						(max-width: 640px)
+		padding					0 0.875em
 
 //// Contains grid elements ////
 
 .inner
 	row(12)
+	clearfix()

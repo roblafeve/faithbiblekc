@@ -1,5 +1,57 @@
 // Footer //
 
 footer
-	padding						1.5em 0
+	display none
+	padding						3em 0 1.5em
 	border-top					1px solid highlight
+	color						footer-links
+
+#footer-logo
+	column(12)
+	margin-bottom				3em
+
+	a
+		display					block
+		float					left
+		width					7.5em
+		height					3em
+		background				url('../img/logo-gray.svg') no-repeat left center
+		background-size			contain
+		overflow				hidden
+		text-indent				-500%
+		color					transparent
+
+#footer-menu
+	column(12)
+	clearfix()
+	color						footer-links
+
+	a
+		display					block
+		color					footer-links
+		&:hover
+			text-decoration		underline
+
+	> li
+		float					left
+		margin					0 2.5em 0 0
+		&:last-child
+			margin				0
+		
+		> a
+			@extend				h6
+			padding				0
+			letter-spacing		0.1em
+
+		&.current-menu-item a
+			color				footer-links
+
+		> ul
+			> li 
+				a
+					@extend		h6
+					padding		0
+
+				&.current-menu-item a
+					color		footer-links
+

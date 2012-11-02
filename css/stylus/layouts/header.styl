@@ -1,39 +1,83 @@
 // Header //
 
+#header-wrapper
+	overflow					hidden
+	position					fixed
+	width 						100%
+	@media						(max-width: 768px)
+		border-radius			0.3125em 0.3125em 0 0
+
 header
-	padding							1.5em 0
-	background-color				header-bg
-	border-bottom					1px solid lowlight
+	padding						0 0
+	background-color			header-bg
+	border-top					1px solid highlight
+	border-bottom				1px solid lowlight
+	@media						(max-width: 640px)
+		z-index					1
+		position				relative
+		width					100%
 
-	.logo
-		column(4)
+#header-logo
+	column(2)
 
-		a
-			display					block
-			width					100%
-			height					3em
-			background				url('../img/logo.svg') no-repeat left center
-			background-size			contain
-			overflow				hidden
-			text-indent				-500%
-			color					transparent
-	nav
-		column(8)
-		margin-top					0.8em
-		margin-bottom				0.8em
+	a
+		display					block
+		max-width				7.5em
+		height					1.5em
+		margin					0.8em 0
+		background				url('../img/logo.svg') no-repeat
+		background-position		left center
+		background-size			contain
+		overflow				hidden
+		text-indent				-500%
+		color					transparent
 
-		ul
-			margin					0
+#header-menu
+	display						none
+	@media						(min-width: 769px)
+		display					visible
+		column(10)
+		margin-top				0.8em
+		margin-bottom			0.8em
+		clearfix()
 
-			li
-				float				left
-				margin				0 0 0 3em
-				
-				a
-					font-size		0.875em
-					text-transform	uppercase
-					color			black
-					letter-spacing	0.1em
+		li
+			float				left
+			margin				0 0 0 2.5em
+			
+			a
+				@extend			h6
+				padding			0
+				color			black
+				letter-spacing	0.1em
 
-				&.current-menu-item a
-					color			red
+			&.current-menu-item a
+				color			red
+
+#mobile-menu-toggle
+	display						none
+	@media						(max-width: 768px)
+		column(3)
+		offset(7)
+		font-family				'EntypoRegular'
+		font-size				3.75em
+		line-height				0.575em
+		color					black
+		text-align				right
+
+#mobile-menu
+	z-index						-1
+	position					fixed
+	top							0
+	left						0
+	width						100%
+	height						100%
+	overflow-y					auto
+	background-color			mobile-menu-bg
+
+	ul
+		position				relative
+		top						0
+		left					0
+		text-align				right
+		margin					1.5em

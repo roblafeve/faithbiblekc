@@ -6,55 +6,41 @@ body
 
 h1
 	font 				2.25em/1.3 		'OpenSansLight', Helvetica, Arial, sans-serif
-	padding 			0
+	padding 			0.6875em 0 0
 	margin 				0
 
 h2
 	font 				1.8em/1.3 		'OpenSansLight', Helvetica, Arial, sans-serif
-	padding				0
+	padding				0.85em 0 0
 	margin				0
 
 h3
 	font 				1.25em/1.34 	'OpenSansSemiBold', Helvetica, Arial, sans-serif
-	padding				0
+	padding				1.2em 0 0
 	margin				0
 
 h4
 	font 				1.152em/1.67	'OpenSansLightItalic', Helvetica, Arial, sans-serif
-	padding				0
+	padding				1.35em 0 0
 	margin				0
 
 h5
 	font 				1em/1.77		'OpenSansSemibold', Helvetica, Arial, sans-serif
-	padding				0
+	padding				1.5em 0 0
 	margin				0
 
 h6
 	font 				0.8em/1.90		'OpenSansRegular', Helvetica, Arial, sans-serif
-	padding				0
+	padding				1.875em 0 0
 	margin				0
 	text-transform		uppercase
-
-//// Headers Preceded by Headers ////
-
-h1 + h1, h2 + h1, h3 + h1, h4 + h1, h5 + h1, h6 + h1
-	margin				0.6875em 0 0
-h1 + h2, h2 + h2, h3 + h2, h4 + h2, h5 + h2, h6 + h2
-	margin				0.85em 0 0
-h1 + h3, h2 + h3, h3 + h3, h4 + h3, h5 + h3, h6 + h3
-	margin				1.2em 0 0
-h1 + h4, h2 + h4, h3 + h4, h4 + h4, h5 + h4, h6 + h4
-	margin				1.35em 0 0
-h1 + h5, h2 + h5, h3 + h5, h4 + h5, h5 + h5, h6 + h5
-	margin				1.5em 0 0
-h1 + h6, h2 + h6, h3 + h6, h4 + h6, h5 + h6, h6 + h6
-	margin				1.875em 0 0
 
 // Header Groups //
 
 hgroup
 	margin				1.5em 0
-	& > *
+	& > * + *
+		padding			0
 		margin			0 !important
 		
 ul, ol
@@ -69,18 +55,6 @@ ul, ol
 
 p, ul, ol, pre, td, th, blockquote
 	margin 1.5em 0
-	& + h1
-		padding					0.6875em 0 0
-	& + h2
-		padding					0.85em 0 0
-	& + h3
-		padding					1.2em 0 0
-	& + h4
-		padding					1.35em 0 0
-	& + h5
-		padding					1.5em 0 0
-	& + h6
-		padding					1.875em 0 0
 
 // Global Lists //
 
