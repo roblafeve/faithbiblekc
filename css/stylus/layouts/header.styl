@@ -4,8 +4,7 @@
 	overflow					hidden
 	position					fixed
 	width 						100%
-	@media						(max-width: 768px)
-		border-radius			0.3125em 0.3125em 0 0
+	box-shadow					0 1px 1px 0 rgba(#000, 0.1)
 
 header
 	padding						0 0
@@ -16,13 +15,16 @@ header
 		z-index					1
 		position				relative
 		width					100%
+		border-radius			mobile-radius mobile-radius 0 0
 
 #header-logo
 	column(2)
+	@media						(max-width: 768px)
+		column(4)
+		offset(4)
 
 	a
 		display					block
-		max-width				7.5em
 		height					1.5em
 		margin					0.8em 0
 		background				url('../img/logo.svg') no-repeat
@@ -31,6 +33,8 @@ header
 		overflow				hidden
 		text-indent				-500%
 		color					transparent
+		@media					(max-width: 768px)
+			background-position	center center
 
 #header-menu
 	display						none
@@ -58,7 +62,7 @@ header
 	display						none
 	@media						(max-width: 768px)
 		column(3)
-		offset(7)
+		offset(1)
 		font-family				'EntypoRegular'
 		font-size				3.75em
 		line-height				0.575em

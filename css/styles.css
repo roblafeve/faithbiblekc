@@ -340,8 +340,8 @@ body {
 }
 #page-wrapper {
   height: 100%;
-  -webkit-border-radius: 0.3125em;
-  border-radius: 0.3125em;
+  -webkit-border-radius: 0.125em;
+  border-radius: 0.125em;
   overflow: auto;
   -webkit-box-shadow: 0 0 10px 0 #000;
   box-shadow: 0 0 10px 0 #000;
@@ -390,12 +390,8 @@ body {
   overflow: hidden;
   position: fixed;
   width: 100%;
-}
-@media (max-width: 768px) {
-  #header-wrapper {
-    -webkit-border-radius: 0.3125em 0.3125em 0 0;
-    border-radius: 0.3125em 0.3125em 0 0;
-  }
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
 }
 header {
   padding: 0 0;
@@ -408,6 +404,8 @@ header {
     z-index: 1;
     position: relative;
     width: 100%;
+    -webkit-border-radius: 0.125em 0.125em 0 0;
+    border-radius: 0.125em 0.125em 0 0;
   }
 }
 #header-logo {
@@ -418,9 +416,19 @@ header {
   *width: 14.583333333333334% -correction;
   *margin: 0 1.0416666666666665% -correction;
 }
+@media (max-width: 768px) {
+  #header-logo {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.0416666666666665%;
+    *width: 31.25% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+    margin-left: 34.375%;
+  }
+}
 #header-logo a {
   display: block;
-  max-width: 7.5em;
   height: 1.5em;
   margin: 0.8em 0;
   background: url("../img/logo.svg") no-repeat;
@@ -431,6 +439,11 @@ header {
   overflow: hidden;
   text-indent: -500%;
   color: transparent;
+}
+@media (max-width: 768px) {
+  #header-logo a {
+    background-position: center center;
+  }
 }
 #header-menu {
   display: none;
@@ -480,7 +493,7 @@ header {
     margin: 0 1.0416666666666665%;
     *width: 22.916666666666664% -correction;
     *margin: 0 1.0416666666666665% -correction;
-    margin-left: 59.375%;
+    margin-left: 9.375%;
     font-family: 'EntypoRegular';
     font-size: 3.75em;
     line-height: 0.575em;
