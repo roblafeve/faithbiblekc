@@ -5,7 +5,7 @@
     'show_count'   => 1,
     'pad_counts'   => 0,
     'hierarchical' => 1,
-    'title_li'     => 'Series'
+    'title_li'     => '<h6>Series</h6>'
   );?>
 
   <ul>
@@ -18,7 +18,7 @@
     'show_count'   => 1,
     'pad_counts'   => 0,
     'hierarchical' => 0,
-    'title_li'     => 'Preacher'
+    'title_li'     => '<h6>Preacher</h6>'
   );?>
 
   <ul>

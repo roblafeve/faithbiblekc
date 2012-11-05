@@ -1,7 +1,9 @@
 // Sidebar //
 
 .sidebar
-	column(5)
+	column(4)
+	@media					(max-width: 640px)
+		display				none
 	> *:first-child
 		margin-top			0
 	> *:last-child

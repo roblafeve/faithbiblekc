@@ -13,8 +13,12 @@
 		<?php wp_head(); ?>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/cssrefresh.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
+		<?php include_once('inc/ga.php'); ?>
 	</head>
 	<body>	
+		<nav id='mobile-menu'>
+			<?php wp_nav_menu( array('container' => '','menu' => 'main')); ?>
+		</nav>
 		<div id='page-position'>
 			<div id='page-wrapper'>
 				<div id='header-wrapper'>
@@ -29,8 +33,5 @@
 					</header>
 				</div>
 				<div id='main'>
-					<nav id='mobile-menu'>
-						<?php wp_nav_menu( array('container' => '','menu' => 'main')); ?>
-					</nav>
 					<div class='outer'>
 						<div class='inner'>
