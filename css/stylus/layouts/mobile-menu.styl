@@ -1,0 +1,35 @@
+// Mobile Menu
+
+#mobile-menu
+	transition					all 0.15s linear
+	z-index						-1
+	position					fixed
+	top							0
+	left						0
+	width						100%
+	height						100%
+	overflow-y					auto
+	background-color			mobile-menu-bg
+	padding-left				50%
+	@media						(max-width: 640px)
+		padding-left			20%
+
+	ul
+		transition				all 0.2s ease-in-out
+		position				relative
+		top						0
+		left					0
+		width					100%
+		margin					0
+		text-align				left
+		border-top				0.0625em solid darken(mobile-menu-bg, 5)
+		border-bottom			0.0625em solid lighten(mobile-menu-bg, 5)
+		clearfix()
+		li
+			border-top			0.0625em solid lighten(mobile-menu-bg, 5)
+			border-bottom		0.0625em solid darken(mobile-menu-bg, 5)
+			a
+				display			block
+				@extend			h6
+				padding			0.75em 1.5em
+				color			lighten(mobile-menu-bg, 60)

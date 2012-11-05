@@ -6,32 +6,32 @@ body
 
 h1
 	font 				2.25em/1.3 		'OpenSansLight', Helvetica, Arial, sans-serif
-	padding 			0.6875em 0 0
+	padding 			0
 	margin 				0
 
 h2
 	font 				1.8em/1.3 		'OpenSansLight', Helvetica, Arial, sans-serif
-	padding				0.85em 0 0
+	padding				0
 	margin				0
 
 h3
 	font 				1.25em/1.34 	'OpenSansSemiBold', Helvetica, Arial, sans-serif
-	padding				1.2em 0 0
+	padding				0
 	margin				0
 
 h4
 	font 				1.152em/1.67	'OpenSansLightItalic', Helvetica, Arial, sans-serif
-	padding				1.35em 0 0
+	padding				0
 	margin				0
 
 h5
 	font 				1em/1.77		'OpenSansSemibold', Helvetica, Arial, sans-serif
-	padding				1.5em 0 0
+	padding				0
 	margin				0
 
 h6
 	font 				0.8em/1.90		'OpenSansRegular', Helvetica, Arial, sans-serif
-	padding				1.875em 0 0
+	padding				0
 	margin				0
 	text-transform		uppercase
 
@@ -84,16 +84,17 @@ ul, ol
 
 // Blockquotes //
 
-blockquote p
-	@extend				h4
+blockquote *
+	@extend				h2
 	position			relative
 	padding				0 1.5em 0 1.5em
+	color				black
 	&:before, &:after
 		position		relative
 		font-family		georgia
 		font-size		2em
 		line-height		0
-		color			lighten(blue, 30)
+		color			red
 	&:before
 		content			'“'
 		top				0.3em

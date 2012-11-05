@@ -1,20 +1,18 @@
 // Header //
 
 #header-wrapper
-	overflow					hidden
+	z-index						1
 	position					fixed
 	width 						100%
-	box-shadow					0 1px 1px 0 rgba(#000, 0.1)
 
 header
-	padding						0 0
-	background-color			header-bg
+	position					relative
+	width						100%
+	background-color			rgba(header-bg, 0.98)
 	border-top					1px solid highlight
-	border-bottom				1px solid lowlight
-	@media						(max-width: 640px)
-		z-index					1
-		position				relative
-		width					100%
+	border-bottom				1px solid darken(lowlight, 10)
+	box-shadow					0 2px 1px 0 rgba(#000, 0.05)
+	@media						(max-width: 768px)
 		border-radius			mobile-radius mobile-radius 0 0
 
 #header-logo
@@ -37,26 +35,25 @@ header
 			background-position	center center
 
 #header-menu
-	display						none
-	@media						(min-width: 769px)
-		display					visible
-		column(10)
-		margin-top				0.8em
-		margin-bottom			0.8em
-		clearfix()
+	column(10)
+	margin-top					0.8em
+	margin-bottom				0.8em
+	clearfix()
+	@media						(max-width: 768px)
+		display					none
 
-		li
-			float				left
-			margin				0 0 0 2.5em
-			
-			a
-				@extend			h6
-				padding			0
-				color			black
-				letter-spacing	0.1em
+	li
+		float				left
+		margin				0 0 0 2.5em
+		
+		a
+			@extend			h6
+			padding			0
+			color			black
+			letter-spacing	0.1em
 
-			&.current-menu-item a
-				color			red
+		&.current-menu-item a
+			color			red
 
 #mobile-menu-toggle
 	display						none
@@ -68,20 +65,3 @@ header
 		line-height				0.575em
 		color					black
 		text-align				right
-
-#mobile-menu
-	z-index						-1
-	position					fixed
-	top							0
-	left						0
-	width						100%
-	height						100%
-	overflow-y					auto
-	background-color			mobile-menu-bg
-
-	ul
-		position				relative
-		top						0
-		left					0
-		text-align				right
-		margin					1.5em

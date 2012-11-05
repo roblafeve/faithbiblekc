@@ -5,18 +5,23 @@ body
 
 #page-position
 	position					absolute
-	transition					all 0.2s ease-in-out
+	transition					margin-left 0.15s ease-in-out
 	top							0
 	left						0
 	width						100%
 	height						100%
 	margin-left					0
 	background-color			footer-bg
+	border-radius				mobile-radius
+	@media						(max-width: 768px)
+		background-color		main-bg
 	
 	&.menu-open
+		transition				margin-left 0.15s ease-in-out
 		@media					(max-width: 768px)
-			transition			all 0.2s ease-in-out
-			margin-left			-65%
+			margin-left			-50%
+		@media					(max-width: 640px)
+			margin-left			-80%
 
 #page-wrapper
 	height						100%
@@ -34,7 +39,7 @@ body
 	margin						0 auto
 	clearfix()
 	@media						(max-width: 768px)
-		padding					0 1.5em
+		padding					0 0.875em
 	@media						(max-width: 640px)
 		padding					0 0.875em
 
