@@ -2,18 +2,21 @@ jQuery(document).ready(function( $ ) {
 
 // Remove Address Bar
 
-	window.addEventListener("load",function() {
-	  // Set a timeout...
-	  setTimeout(function(){
-	    // Hide the address bar!
-	    window.scrollTo(0, 0);
-	  }, 0);
-	});
+	
 	
 // Mobile Sliding Menu
 
-	$('#mobile-menu-toggle').click(function(e) {
-		$('#page-position').toggleClass('menu-open');
+	$('#mobile-menu-toggle-left').click(function(e) {
+		$('#page-position').toggleClass('open-right');
+		$('#mobile').addClass('open-right');
+		$('#mobile').removeClass('open-left');
+		e.preventDefault();
+	});
+
+	$('#mobile-menu-toggle-right').click(function(e) {
+		$('#page-position, #mobile').toggleClass('open-left');
+		$('#mobile').addClass('open-left');
+		$('#mobile').removeClass('open-right');
 		e.preventDefault();
 	});
 

@@ -4,7 +4,7 @@ Template Name: Sermon Archive
 
 <?php get_header(); ?>
 
-<div class='page-header'>
+<div class='content-header'>
 	<h1>Sermons</h1>
 </div>
 <?php include ('sidebar-sermon.php'); ?>

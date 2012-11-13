@@ -8,18 +8,17 @@
 header
 	position					relative
 	width						100%
-	background-color			rgba(header-bg, 0.98)
+	background					linear-gradient(header-bg, rgba(header-bg, 0.9))
 	border-top					1px solid highlight
-	border-bottom				1px solid darken(lowlight, 10)
-	box-shadow					0 2px 1px 0 rgba(#000, 0.05)
+	border-bottom				1px solid white
+	box-shadow					0 2px 1px 0 rgba(#000, 0.1)
 	@media						(max-width: 768px)
 		border-radius			mobile-radius mobile-radius 0 0
 
 #header-logo
 	column(2)
 	@media						(max-width: 768px)
-		column(4)
-		offset(4)
+		column(6)
 
 	a
 		display					block
@@ -43,25 +42,38 @@ header
 		display					none
 
 	li
-		float				left
-		margin				0 0 0 2.5em
+		float					left
+		margin					0 0 0 2.5em
 		
 		a
-			@extend			h6
-			padding			0
-			color			black
-			letter-spacing	0.1em
+			@extend				h6
+			padding				0
+			color				black
+			letter-spacing		0.1em
 
 		&.current-menu-item a
-			color			red
+			color				red
 
-#mobile-menu-toggle
+#mobile-menu-toggle-left
 	display						none
 	@media						(max-width: 768px)
 		column(3)
-		offset(1)
-		font-family				'EntypoRegular'
-		font-size				3.75em
-		line-height				0.575em
-		color					black
+		font-family				'Entypo'
+		font-size				4.5em
+		line-height				0.69em
+		margin-bottom			-0.2em
+		text-align				left
+		color					darken(header-bg, 20)
+		text-shadow				0 2px 0 white
+
+#mobile-menu-toggle-right
+	display						none
+	@media						(max-width: 768px)
+		column(3)
+		font-family				'Entypo'
+		font-size				3em
+		line-height				1.1em
+		margin-bottom			-1em
 		text-align				right
+		color					darken(header-bg, 20)
+		text-shadow				0 2px 0 white

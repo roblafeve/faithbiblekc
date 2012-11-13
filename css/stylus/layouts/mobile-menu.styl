@@ -1,7 +1,6 @@
 // Mobile Menu
 
-#mobile-menu
-	transition					all 0.15s linear
+#mobile
 	z-index						-1
 	position					fixed
 	top							0
@@ -10,17 +9,31 @@
 	height						100%
 	overflow-y					auto
 	background-color			mobile-menu-bg
-	padding-left				50%
-	@media						(max-width: 640px)
-		padding-left			20%
+
+	&.open-right
+		> *:first-child
+			display				block
+			width				100%
+
+	&.open-left
+		> *:nth-child(2)
+			@media				(max-width: 768px)
+				display			block
+				width			50%
+				margin-left		50%
+			@media				(max-width: 640px)
+				display			block
+				width			80%
+				margin-left		20%
 
 	ul
-		transition				all 0.2s ease-in-out
+		display					none
+		transition				all 0.15s ease-in-out
 		position				relative
-		top						0
-		left					0
 		width					100%
 		margin					0
+		overflow				hidden
+		float					left
 		text-align				left
 		border-top				0.0625em solid darken(mobile-menu-bg, 5)
 		border-bottom			0.0625em solid lighten(mobile-menu-bg, 5)
@@ -31,7 +44,7 @@
 			a
 				display			block
 				@extend			h6
-				padding			0.75em 1.5em
+				padding			0.875em 1.5em
 				margin			0
 				color			lighten(mobile-menu-bg, 60)
 

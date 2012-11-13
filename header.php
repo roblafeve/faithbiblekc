@@ -11,27 +11,29 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 		<?php wp_head(); ?>
-		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/cssrefresh.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
 		<?php include_once('inc/ga.php'); ?>
 	</head>
 	<body>	
-		<nav id='mobile-menu'>
-			<?php wp_nav_menu( array('container' => '','menu' => 'main')); ?>
+		<nav id='mobile'>
+			<?php wp_nav_menu( array('container' => '','menu' => 'mobile left', 'menu_class' => 'menu-left')); ?>
+			<?php wp_nav_menu( array('container' => 'section','menu' => 'mobile right', 'menu_class' => 'menu-right')); ?>
 		</nav>
 		<div id='page-position'>
+			<div id='header-wrapper'>
+				<header>
+					<div class='outer'>
+						<nav class='inner'>
+							<a id='mobile-menu-toggle-left' class='button' href='#'>☰</a>
+							<div id='header-logo'><a href='<?php bloginfo('url'); ?>'>Faith Bible Church</a></div>
+							<?php wp_nav_menu( array('container' => '','menu' => 'main', 'menu_id' => 'header-menu')); ?>
+							<a id='mobile-menu-toggle-right' class='button' href='#'></a>
+						</nav>
+					</div>
+				</header>
+			</div>
 			<div id='page-wrapper'>
-				<div id='header-wrapper'>
-					<header>
-						<div class='outer'>
-							<nav class='inner'>
-								<div id='header-logo'><a href='<?php bloginfo('url'); ?>'>Faith Bible Church</a></div>
-								<?php wp_nav_menu( array('container' => '','menu' => 'main', 'menu_id' => 'header-menu')); ?>
-								<a id='mobile-menu-toggle' class='button' href='#'>i</a>
-							</nav>
-						</div>
-					</header>
-				</div>
 				<div id='main'>
 					<div class='outer'>
 						<div class='inner'>

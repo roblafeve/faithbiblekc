@@ -9,6 +9,8 @@
 if ( function_exists( 'register_nav_menus' ) ) {
   register_nav_menus(
     array(
+      'mobile_menu_left' => 'Left Mobile Menu',
+      'mobile_menu_right' => 'Right Mobile Menu',
       'header_menu' => 'Header Menu',
       'footer_menu' => 'Footer Menu'
     )

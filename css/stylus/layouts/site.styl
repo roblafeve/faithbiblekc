@@ -1,33 +1,50 @@
 // Site-Wide Layouts //
 
+html
+	width						100%
+	height						100%
+	position					fixed
+	overflow					hidden !important
+
 body
 	background-color			mobile-menu-bg
 
 #page-position
+
+	menu-speed	=				0.15s
+
+	transition					margin-left menu-speed ease-in-out
 	position					absolute
-	transition					margin-left 0.15s ease-in-out
 	top							0
-	left						0
 	width						100%
 	height						100%
 	margin-left					0
 	background-color			footer-bg
 	border-radius				mobile-radius
+	overflow-x					hidden
 	@media						(max-width: 768px)
 		background-color		main-bg
 	
-	&.menu-open
-		transition				margin-left 0.15s ease-in-out
+	&.open-left
+		transition				margin-left menu-speed ease-in-out
 		@media					(max-width: 768px)
 			margin-left			-50%
 		@media					(max-width: 640px)
 			margin-left			-80%
+	
+	&.open-right
+		transition				margin-left menu-speed ease-in-out
+		@media					(max-width: 768px)
+			margin-left			50%
+		@media					(max-width: 640px)
+			margin-left			80%
 
 #page-wrapper
 	height						100%
 	border-radius				mobile-radius
-	overflow					auto
 	box-shadow					0 0 10px 0 #000
+	overflow					auto
+	-webkit-overflow-scrolling 	touch
 			
 
 
