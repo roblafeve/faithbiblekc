@@ -11,7 +11,6 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 		<?php wp_head(); ?>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
 		<?php include_once('inc/ga.php'); ?>
 	</head>
@@ -36,4 +35,4 @@
 			<div id='page-wrapper'>
 				<div id='main'>
 					<div class='outer'>
-						<div class='inner'>
+						<div class='inner' id='main-content'>

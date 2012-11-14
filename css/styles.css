@@ -322,9 +322,6 @@ html {
   position: fixed;
   overflow: hidden !important;
 }
-body {
-  background-color: #333;
-}
 #page-position {
   -webkit-transition: margin-left 0.15s ease-in-out;
   -moz-transition: margin-left 0.15s ease-in-out;
@@ -336,15 +333,8 @@ body {
   width: 100%;
   height: 100%;
   margin-left: 0;
-  background-color: #333;
   -webkit-border-radius: 0.1875em;
   border-radius: 0.1875em;
-  overflow-x: hidden;
-}
-@media (max-width: 768px) {
-  #page-position {
-    background-color: #fff;
-  }
 }
 #page-position.open-left {
   -webkit-transition: margin-left 0.15s ease-in-out;
@@ -382,12 +372,13 @@ body {
 }
 #page-wrapper {
   height: 100%;
-  -webkit-border-radius: 0.1875em;
-  border-radius: 0.1875em;
-  -webkit-box-shadow: 0 0 10px 0 #000;
-  box-shadow: 0 0 10px 0 #000;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  background: #fff;
+  -webkit-box-shadow: 0 0 3px 2px #000, 3px 0 0 0 #e8e8e8 inset, -3px 0 0 0 #e8e8e8 inset;
+  box-shadow: 0 0 3px 2px #000, 3px 0 0 0 #e8e8e8 inset, -3px 0 0 0 #e8e8e8 inset;
+  -webkit-border-radius: 0.1875em;
+  border-radius: 0.1875em;
 }
 .outer {
   max-width: 64em;
@@ -444,9 +435,9 @@ header {
   background: -ms-linear-gradient(top, #fcfcfc 0%, rgba(252,252,252,0.9) 100%);
   background: linear-gradient(top, #fcfcfc 0%, rgba(252,252,252,0.9) 100%);
   border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,0.1);
-  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.1);
+  border-bottom: 2px solid #fff;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,0.15), 0 -10px 0 0 #333;
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.15), 0 -10px 0 0 #333;
 }
 @media (max-width: 768px) {
   header {
@@ -545,7 +536,7 @@ header a {
     line-height: 0.69em;
     margin-bottom: -0.2em;
     text-align: left;
-    color: #c9c9c9;
+    color: #7d7d7d;
     text-shadow: 0 2px 0 #fff;
   }
 }
@@ -565,7 +556,7 @@ header a {
     line-height: 1.1em;
     margin-bottom: -1em;
     text-align: right;
-    color: #c9c9c9;
+    color: #7d7d7d;
     text-shadow: 0 2px 0 #fff;
   }
 }
@@ -640,9 +631,8 @@ header a {
 }
 #main {
   padding: 4.875em 0 3em;
-  background-color: #fff;
   border-top: 1px solid #fff;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #e8e8e8;
 }
 @media (max-width: 768px) {
   #main {

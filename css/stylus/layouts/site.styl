@@ -6,9 +6,6 @@ html
 	position					fixed
 	overflow					hidden !important
 
-body
-	background-color			mobile-menu-bg
-
 #page-position
 
 	menu-speed	=				0.15s
@@ -19,11 +16,7 @@ body
 	width						100%
 	height						100%
 	margin-left					0
-	background-color			footer-bg
 	border-radius				mobile-radius
-	overflow-x					hidden
-	@media						(max-width: 768px)
-		background-color		main-bg
 	
 	&.open-left
 		transition				margin-left menu-speed ease-in-out
@@ -41,10 +34,11 @@ body
 
 #page-wrapper
 	height						100%
-	border-radius				mobile-radius
-	box-shadow					0 0 10px 0 #000
 	overflow					auto
 	-webkit-overflow-scrolling 	touch
+	background					main-bg
+	box-shadow					0 0 3px 2px #000, 3px 0 0 0 lowlight inset, -3px 0 0 0 lowlight inset
+	border-radius				mobile-radius
 			
 
 

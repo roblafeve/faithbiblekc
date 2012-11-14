@@ -1,12 +1,33 @@
 jQuery(document).ready(function( $ ) {
 
+	var $mainContent = $("#main-content"),
+		siteUrl = "http://" + top.location.host.toString(),
+		url = ''; 
+	$(document).delegate("a[href^='"+siteUrl+"']:not([href*=/wp-admin/]):not([href*=/wp-login.php]):not([href$=/feed/])", "click", function() {
+		location.hash = this.pathname;
+		return false;
+	}); 
+	$(window).bind('hashchange', function(){
+		url = window.location.hash.substring(1); 
+		if (!url) {
+			return;
+		} 
+		url = url + " #main-content"; 
+		$mainContent.animate({opacity: "1"}).load(url, function() {
+			$mainContent.animate({opacity: "1"});
+			$('#page-position').removeClass('open-right');
+			$('#page-position').removeClass('open-left');
+		});
+	});
+	$(window).trigger('hashchange');
+
 // Remove Address Bar
 
 	window.addEventListener("load",function() {
 	  // Set a timeout...
 	  setTimeout(function(){
-	    // Hide the address bar!
-	    window.scrollTo(0, 1);
+		// Hide the address bar!
+		window.scrollTo(0, 1);
 	  }, 0);
 	});
 	
