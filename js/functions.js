@@ -12,7 +12,7 @@ jQuery(document).ready(function( $ ) {
 		if (!url) {
 			return;
 		} 
-		url = url + " #main-content"; 
+		url = url + " #main-content > *"; 
 		$mainContent.animate({opacity: "1"}).load(url, function() {
 			$mainContent.animate({opacity: "1"});
 			$('#page-position').removeClass('open-right');
