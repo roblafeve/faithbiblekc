@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
 		<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/img/favicon.png">
@@ -12,6 +13,7 @@
 		<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 		<?php wp_head(); ?>
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
+		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-noclickdelay.js"></script>
 		<?php include_once('inc/ga.php'); ?>
 	</head>
 	<body>	

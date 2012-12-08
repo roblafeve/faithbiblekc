@@ -1,40 +1,47 @@
 // Site-Wide Layouts //
 
 html
-	width						100%
-	height						100%
-	position					fixed
-	overflow					hidden !important
+	position 						absolute
+	width								100%
+	height							100%
+	padding							0 0 60px
+	overflow						hidden
+
+body
+	width								100%
+	height							100%
+	position						fixed
+	overflow						hidden !important
 
 #page-position
 
 	menu-speed	=				0.15s
 
 	transition					margin-left menu-speed ease-in-out
-	position					absolute
-	top							0
-	width						100%
-	height						100%
+	position						absolute
+	top									0
+	width								100%
+	height							100%
 	margin-left					0
 	border-radius				mobile-radius
 	
 	&.open-left
 		transition				margin-left menu-speed ease-in-out
-		@media					(max-width: 768px)
+		@media						(max-width: 768px)
 			margin-left			-50%
-		@media					(max-width: 640px)
+		@media						(max-width: 640px)
 			margin-left			-80%
 	
 	&.open-right
 		transition				margin-left menu-speed ease-in-out
-		@media					(max-width: 768px)
+		@media						(max-width: 768px)
 			margin-left			50%
-		@media					(max-width: 640px)
+		@media						(max-width: 640px)
 			margin-left			80%
 
 #page-wrapper
-	height						100%
-	overflow					auto
+	height							100%
+	overflow						auto
 	-webkit-overflow-scrolling 	touch
 	background					main-bg
 	box-shadow					0 0 3px 2px #000, 3px 0 0 0 lowlight inset, -3px 0 0 0 lowlight inset
@@ -45,14 +52,14 @@ html
 //// Determines maximum content width ////
 
 .outer
-	max-width					64em
-	padding						0 3em
-	margin						0 auto
+	max-width						64em
+	padding							0 3em
+	margin							0 auto
 	clearfix()
-	@media						(max-width: 768px)
-		padding					0 0.875em
-	@media						(max-width: 640px)
-		padding					0 0.875em
+	@media							(max-width: 768px)
+		padding						0 0.875em
+	@media							(max-width: 640px)
+		padding						0 0.875em
 
 //// Contains grid elements ////
 

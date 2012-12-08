@@ -1,38 +1,38 @@
 // Header //
 
 #header-wrapper
-	z-index						1
-	position					fixed
-	width 						100%
+	z-index							1
+	position						fixed
+	width 							100%
 
 header
-	position					relative
-	width						100%
-	background					linear-gradient(header-bg, rgba(header-bg, 0.9))
+	position						relative
+	width								100%
+	background					rgba(header-bg, 0.96)
 	border-top					1px solid highlight
 	border-bottom				2px solid white
-	box-shadow					0 2px 1px 0 rgba(#000, 0.15), 0 -10px 0 0 black
-	@media						(max-width: 768px)
+	box-shadow					0 1px 1px 0 rgba(#000, 0.15), 0 -10px 0 0 black
+	@media							(max-width: 768px)
 		border-radius			mobile-radius mobile-radius 0 0
 	a
 		-webkit-tap-highlight-color rgba(0,0,0,0)
 
 #header-logo
 	column(2)
-	@media						(max-width: 768px)
+	@media							(max-width: 768px)
 		column(6)
 
 	a
-		display					block
-		height					1.5em
-		margin					0.8em 0
+		display						block
+		height						1.5em
+		margin						0.8em 0
 		background				url('../img/logo.svg') no-repeat
 		background-position		left center
-		background-size			contain
-		overflow				hidden
+		background-size		contain
+		overflow					hidden
 		text-indent				-500%
-		color					transparent
-		@media					(max-width: 768px)
+		color							transparent
+		@media						(max-width: 768px)
 			background-position	center center
 
 #header-menu
@@ -40,42 +40,42 @@ header
 	margin-top					0.8em
 	margin-bottom				0.8em
 	clearfix()
-	@media						(max-width: 768px)
-		display					none
+	@media							(max-width: 768px)
+		display						none
 
 	li
-		float					left
-		margin					0 0 0 2.5em
+		float							left
+		margin						0 0 0 2.5em
 		
 		a
-			@extend				h6
-			padding				0
-			color				black
-			letter-spacing		0.1em
+			@extend					h6
+			padding					0
+			color						black
+			letter-spacing	0.1em
 
 		&.current-menu-item a
-			color				red
+			color						red
 
 #mobile-menu-toggle-left
-	display						none
-	@media						(max-width: 768px)
+	display							none
+	@media							(max-width: 768px)
 		column(3)
 		font-family				'Entypo'
-		font-size				4.5em
+		font-size					4.5em
 		line-height				0.69em
 		margin-bottom			-0.2em
 		text-align				left
-		color					darken(header-bg, 50)
+		color							darken(header-bg, 50)
 		text-shadow				0 2px 0 white
 
 #mobile-menu-toggle-right
-	display						none
-	@media						(max-width: 768px)
+	display							none
+	@media							(max-width: 768px)
 		column(3)
 		font-family				'Entypo'
-		font-size				3em
+		font-size					3em
 		line-height				1.1em
 		margin-bottom			-1em
 		text-align				right
-		color					darken(header-bg, 50)
+		color							darken(header-bg, 50)
 		text-shadow				0 2px 0 white
