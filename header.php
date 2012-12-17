@@ -16,25 +16,24 @@
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-noclickdelay.js"></script>
 		<?php include_once('inc/ga.php'); ?>
 	</head>
-	<body>	
-		<nav id='mobile'>
+	<body>
+
+		<header>
+			<nav>
+				<div class='inner'>
+					<a id='mobile-menu-toggle-left' class='button' href='#'>☰</a>
+						<div id='header-logo'><a href='<?php bloginfo('url'); ?>'>Faith Bible Church</a></div>
+						<?php wp_nav_menu( array('container' => '','menu' => 'main', 'menu_id' => 'header-menu')); ?>
+					<a id='mobile-menu-toggle-right' class='button' href='#'></a>
+				</div>
+			</nav>
+		</header>
+
+		<nav id='mobile-menus'>
 			<?php wp_nav_menu( array('container' => '','menu' => 'mobile left', 'menu_class' => 'menu-left')); ?>
 			<?php wp_nav_menu( array('container' => 'section','menu' => 'mobile right', 'menu_class' => 'menu-right')); ?>
 		</nav>
-		<div id='page-position'>
-			<div id='header-wrapper'>
-				<header>
-					<div class='outer'>
-						<nav class='inner'>
-							<a id='mobile-menu-toggle-left' class='button' href='#'>☰</a>
-							<div id='header-logo'><a href='<?php bloginfo('url'); ?>'>Faith Bible Church</a></div>
-							<?php wp_nav_menu( array('container' => '','menu' => 'main', 'menu_id' => 'header-menu')); ?>
-							<a id='mobile-menu-toggle-right' class='button' href='#'></a>
-						</nav>
-					</div>
-				</header>
-			</div>
-			<div id='page-wrapper'>
-				<div id='main'>
-					<div class='outer'>
-						<div class='inner' id='main-content'>
+
+		<div id='main-wrapper'>
+			<div id='main'>
+				<div class='inner'>

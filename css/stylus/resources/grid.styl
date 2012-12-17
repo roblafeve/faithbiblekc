@@ -1,5 +1,3 @@
-// Grid //
-
 /////////////////
 // Semantic.gs // for Stylus: http://learnboost.github.com/stylus/
 /////////////////
@@ -34,6 +32,13 @@ clearfix()
 		clear:both
 
 
+//////////
+// GRID //
+//////////
+
+body
+	width 100%
+	clearfix()
 
 row(columns = columns)
 	display block
@@ -45,6 +50,7 @@ row(columns = columns)
 column(x, columns = columns)
 	display inline
 	float left
+	overflow hidden
 	width total-width * ((((gutter-width + column-width ) * x) - gutter-width) / _gridsystem-width)
 	margin 0 total-width * ( (gutter-width * 0.5) / _gridsystem-width)
 	*width total-width * ((((gutter-width + column-width ) * x) - gutter-width) / _gridsystem-width)-correction

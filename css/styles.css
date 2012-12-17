@@ -316,6 +316,18 @@ ul.list-unstyled {
   list-style: none;
   padding: 0;
 }
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
 .sermon {
   display: table;
   width: 100%;
@@ -350,99 +362,109 @@ ul.list-unstyled {
   padding: 0.75em;
   margin: 0;
 }
-html {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 0 0 60px;
-  overflow: hidden;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  overflow: hidden !important;
+  position: relative;
+  background: #808080;
 }
-#page-position {
-  -webkit-transition: margin-left 0.15s ease-in-out;
-  -moz-transition: margin-left 0.15s ease-in-out;
-  -o-transition: margin-left 0.15s ease-in-out;
-  -ms-transition: margin-left 0.15s ease-in-out;
-  transition: margin-left 0.15s ease-in-out;
-  position: absolute;
+body header nav,
+body #main {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: left 0.2s ease-out;
+  -moz-transition: left 0.2s ease-out;
+  -o-transition: left 0.2s ease-out;
+  -ms-transition: left 0.2s ease-out;
+  transition: left 0.2s ease-out;
+}
+body.slide-right header nav,
+body.slide-right #main {
+  left: 80%;
+}
+body.slide-left header nav,
+body.slide-left #main {
+  left: -80%;
+}
+header {
+  z-index: 2;
+  position: fixed;
   top: 0;
   width: 100%;
-  height: 100%;
-  margin-left: 0;
-  -webkit-border-radius: 0.1875em;
-  border-radius: 0.1875em;
+  height: 1px;
 }
-#page-position.open-left {
-  -webkit-transition: margin-left 0.15s ease-in-out;
-  -moz-transition: margin-left 0.15s ease-in-out;
-  -o-transition: margin-left 0.15s ease-in-out;
-  -ms-transition: margin-left 0.15s ease-in-out;
-  transition: margin-left 0.15s ease-in-out;
+header nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
 }
-@media (max-width: 768px) {
-  #page-position.open-left {
-    margin-left: -50%;
-  }
+#main-wrapper {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  pointer-events: none;
 }
-@media (max-width: 640px) {
-  #page-position.open-left {
-    margin-left: -80%;
-  }
-}
-#page-position.open-right {
-  -webkit-transition: margin-left 0.15s ease-in-out;
-  -moz-transition: margin-left 0.15s ease-in-out;
-  -o-transition: margin-left 0.15s ease-in-out;
-  -ms-transition: margin-left 0.15s ease-in-out;
-  transition: margin-left 0.15s ease-in-out;
-}
-@media (max-width: 768px) {
-  #page-position.open-right {
-    margin-left: 50%;
-  }
-}
-@media (max-width: 640px) {
-  #page-position.open-right {
-    margin-left: 80%;
-  }
-}
-#page-wrapper {
-  height: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+#main {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 300%;
+  margin-bottom: -300%;
   background: #fff;
-  -webkit-box-shadow: 0 0 3px 2px #000, 3px 0 0 0 #edf2f5 inset, -3px 0 0 0 #edf2f5 inset;
-  box-shadow: 0 0 3px 2px #000, 3px 0 0 0 #edf2f5 inset, -3px 0 0 0 #edf2f5 inset;
-  -webkit-border-radius: 0.1875em;
-  border-radius: 0.1875em;
+  pointer-events: initial;
+  overflow: hidden;
 }
-.outer {
+#mobile-menus {
+  z-index: -2;
+  position: fixed;
+  width: 50%;
+  overflow: auto;
+}
+header nav,
+#main {
   max-width: 64em;
-  padding: 0 3em;
-  margin: 0 auto;
+  padding-right: 3em;
+  padding-left: 3em;
+  margin-right: auto;
+  margin-left: auto;
   *zoom: 1;
 }
-.outer:before,
-.outer:after {
+header nav:before,
+#main:before,
+header nav:after,
+#main:after {
   content: "";
   display: table;
 }
-.outer:after {
+header nav:after,
+#main:after {
   clear: both;
 }
 @media (max-width: 768px) {
-  .outer {
-    padding: 0 0.875em;
+  header nav,
+  #main {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
   }
 }
 @media (max-width: 640px) {
-  .outer {
-    padding: 0 0.875em;
+  header nav,
+  #main {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
   }
 }
 .inner {
@@ -461,14 +483,7 @@ body {
 .inner:after {
   clear: both;
 }
-#header-wrapper {
-  z-index: 1;
-  position: fixed;
-  width: 100%;
-}
-header {
-  position: relative;
-  width: 100%;
+header nav {
   background: rgba(252,252,252,0.96);
   border-top: 1px solid #fff;
   border-bottom: 2px solid #fff;
@@ -476,17 +491,18 @@ header {
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15), 0 -10px 0 0 #333;
 }
 @media (max-width: 768px) {
-  header {
+  header nav {
     -webkit-border-radius: 0.1875em 0.1875em 0 0;
     border-radius: 0.1875em 0.1875em 0 0;
   }
 }
-header a {
+header nav a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 #header-logo {
   display: inline;
   float: left;
+  overflow: hidden;
   width: 14.583333333333334%;
   margin: 0 1.0416666666666665%;
   *width: 14.583333333333334% -correction;
@@ -496,6 +512,7 @@ header a {
   #header-logo {
     display: inline;
     float: left;
+    overflow: hidden;
     width: 47.91666666666667%;
     margin: 0 1.0416666666666665%;
     *width: 47.91666666666667% -correction;
@@ -523,6 +540,7 @@ header a {
 #header-menu {
   display: inline;
   float: left;
+  overflow: hidden;
   width: 81.25%;
   margin: 0 1.0416666666666665%;
   *width: 81.25% -correction;
@@ -563,6 +581,7 @@ header a {
   #mobile-menu-toggle-left {
     display: inline;
     float: left;
+    overflow: hidden;
     width: 22.916666666666664%;
     margin: 0 1.0416666666666665%;
     *width: 22.916666666666664% -correction;
@@ -583,6 +602,7 @@ header a {
   #mobile-menu-toggle-right {
     display: inline;
     float: left;
+    overflow: hidden;
     width: 22.916666666666664%;
     margin: 0 1.0416666666666665%;
     *width: 22.916666666666664% -correction;
@@ -604,7 +624,6 @@ header a {
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  background-color: #333;
 }
 #mobile a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -640,8 +659,6 @@ header a {
   overflow: hidden;
   float: left;
   text-align: left;
-  border-top: 0.0625em solid #262626;
-  border-bottom: 0.0625em solid #404040;
   *zoom: 1;
 }
 #mobile ul:before,
@@ -665,22 +682,6 @@ header a {
 #mobile ul li a:hover {
   background: #303030;
 }
-#main {
-  padding: 4.875em 0 3em;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #edf2f5;
-}
-@media (max-width: 768px) {
-  #main {
-    border: none;
-    padding: 4.875em 0 1.5em;
-  }
-}
-@media (max-width: 768px) {
-  #main .outer {
-    padding: 0 1.5em;
-  }
-}
 footer {
   padding: 3em 0 1.5em;
   border-top: 1px solid #fff;
@@ -694,6 +695,7 @@ footer {
 #footer-logo {
   display: inline;
   float: left;
+  overflow: hidden;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   *width: 97.91666666666666% -correction;
@@ -716,6 +718,7 @@ footer {
 #footer-menu {
   display: inline;
   float: left;
+  overflow: hidden;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   *width: 97.91666666666666% -correction;
@@ -762,6 +765,7 @@ footer {
 .content-header {
   display: inline;
   float: left;
+  overflow: hidden;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   *width: 97.91666666666666% -correction;
@@ -770,6 +774,7 @@ footer {
 .content {
   display: inline;
   float: left;
+  overflow: hidden;
   width: 64.58333333333334%;
   margin: 0 1.0416666666666665%;
   *width: 64.58333333333334% -correction;
@@ -779,6 +784,7 @@ footer {
   .content {
     display: inline;
     float: left;
+    overflow: hidden;
     width: 97.91666666666666%;
     margin: 0 1.0416666666666665%;
     *width: 97.91666666666666% -correction;
@@ -794,6 +800,7 @@ footer {
 .sidebar {
   display: inline;
   float: left;
+  overflow: hidden;
   width: 31.25%;
   margin: 0 1.0416666666666665%;
   *width: 31.25% -correction;

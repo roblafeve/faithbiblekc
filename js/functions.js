@@ -1,6 +1,6 @@
 jQuery(document).ready(function( $ ) {
 
-	var $mainContent = $("#main-content"),
+	var $mainContent = $("#main"),
 		siteUrl = "http://" + top.location.host.toString(),
 		url = ''; 
 	$(document).delegate("a[href^='"+siteUrl+"']:not([href*=/wp-admin/]):not([href*=/wp-login.php]):not([href$=/feed/])", "click", function() {
@@ -12,11 +12,11 @@ jQuery(document).ready(function( $ ) {
 		if (!url) {
 			return;
 		} 
-		url = url + " #main-content > *"; 
+		url = url + " #main > *"; 
 		$mainContent.animate({opacity: "1"}).load(url, function() {
 			$mainContent.animate({opacity: "1"});
-			$('#page-position').removeClass('open-right');
-			$('#page-position').removeClass('open-left');
+			$('body').removeClass('slide-right');
+			$('body').removeClass('slide-left');
 		});
 	});
 	$(window).trigger('hashchange');
@@ -34,16 +34,16 @@ jQuery(document).ready(function( $ ) {
 // Mobile Sliding Menu
 
 	$('#mobile-menu-toggle-left').click(function(e) {
-		$('#page-position').toggleClass('open-right');
-		$('#mobile').addClass('open-right');
-		$('#mobile').removeClass('open-left');
+		$('body').toggleClass('slide-right');
+		$('#mobile-menus').addClass('slide-right');
+		$('#mobile-menus').removeClass('slide-left');
 		e.preventDefault();
 	});
 
 	$('#mobile-menu-toggle-right').click(function(e) {
-		$('#page-position, #mobile').toggleClass('open-left');
-		$('#mobile').addClass('open-left');
-		$('#mobile').removeClass('open-right');
+		$('body, #mobile').toggleClass('slide-left');
+		$('#mobile-menus').addClass('slide-left');
+		$('#mobile-menus').removeClass('slide-right');
 		e.preventDefault();
 	});
 
